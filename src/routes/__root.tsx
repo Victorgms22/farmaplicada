@@ -78,11 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Farmacologia — Acesso Imediato" },
-      { name: "description", content: "Acesse o material de Farmacologia por R$ 17,90." },
+      { title: "Farmacologia Aplicada — Guia Completo por R$ 17,90" },
+      { name: "description", content: "Material digital de Farmacologia Aplicada: classes de medicamentos, mecanismos de ação e mais, por R$ 17,90." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Farmacologia — Acesso Imediato" },
-      { property: "og:description", content: "Acesse o material de Farmacologia por R$ 17,90." },
+      { property: "og:title", content: "Farmacologia Aplicada — Guia Completo por R$ 17,90" },
+      { property: "og:description", content: "Aprenda farmacologia com um material digital prático e organizado. Acesso por R$ 17,90." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -92,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Manrope:wght@400;600;800&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
@@ -104,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
